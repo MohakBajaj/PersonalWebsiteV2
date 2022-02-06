@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <!-- Primary Meta Tags -->
+    <title>Mohak Bajaj | Blog</title>
+    <meta name="title" content="Mohak Bajaj | Blog" />
+    <meta
+      name="description"
+      content="This is a Personal Website for Showcasing Projects and a Blog made with ❤️ by Mohak Bajaj."
+    />
+    <meta
+      name="google-site-verification"
+      content="lAY-xi36h7ZE5dj8YjhBRXTZuiGwWTU8m5tTrNvX_G8"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://mohak.ml/" />
+    <meta property="og:title" content="Mohak Bajaj | Blog" />
+    <meta
+      property="og:description"
+      content="This is a Personal Website for Showcasing Projects and a Blog made with ❤️ by Mohak Bajaj."
+    />
+    <meta name="author" content="Mohak Bajaj" />
+
+    <meta property="og:image" content="./favicon.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://mohak.ml/" />
+    <meta property="twitter:title" content="Mohak Bajaj | Blog" />
+    <meta
+      property="twitter:description"
+      content="This is a Personal Website for Showcasing Projects and a Blog made with ❤️ by Mohak Bajaj."
+    />
+    <meta property="twitter:image" content="./favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/cursor.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Raleway"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.25.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="particles-js"></div>
+      <div
+        class="navbar mt-2 mb-2 shadow-lg bg-neutral text-neutral-content rounded-box animate__animated animate__fadeInDown"
+      >
+        <div class="flex-none">
+          <button
+            class="btn btn-square btn-ghost"
+            onclick="javascript:document.location.href = '/'"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-6 h-6 stroke-current text-success"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 px-2 mx-2">
+          <span data-theme="wireframe" class="text-lg font-bold">
+            Go Back
+          </span>
+        </div>
+      </div>
+      <div class="flex justify-center mt-4 py-5 mb-20">
+        <span
+          class="text-center text-8xl font bold animate__animated animate__lightSpeedInRight"
+          >Blog</span
+        >
+      </div>
+      {{#each blogs}}
+      <div class="flex items-center w-full px-4 py-10 animate__animated animate__fadeInUp" style="user-select:text;">
+        <div class="card card-compact lg:card-side card-bordered shadow-lg p-auto m-auto" style="background:rgba(255,255,255,0.07);"> 
+          <div class="card-body">
+            <h2 class="card-title">{{this.title}}</h2> 
+            <p>{{this.description}}</p>
+            <div class="card-actions">
+              <a href="/blog/{{this.slug}}" class="btn btn-outline">Read Post</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    <!--Cursor-->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/cursor.js"></script>
+  </body>
+</html>

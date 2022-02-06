@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohak Bajaj | BlogCMS</title>
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+    <script src="ckeditor.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        * {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+<body>
+    {{!--Blog cms using secret key field --}}
+    <div class="nes-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Blog CMS</h1>
+                <form action="/blogcms-api" method="POST">
+                    <div class="form-group">
+                        <label for="secret_key">Secret Key</label>
+                        <input type="text" class="nes-input" name="secret_key" id="secret_key" placeholder="Secret Key">
+                    </div>
+                    <div class="form-group">
+                        <label for="slug">Slug</label>
+                        <input type="text" class="nes-input" name="slug" id="slug" placeholder="Slug">
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="nes-input" name="title" id="title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">Description</label>
+                        <input type="text" class="nes-input" name="desc" id="desc" placeholder="Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea class="nes-textarea" name="content" id="content" cols="30" rows="10" placeholder="Content"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="nes-btn is-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+</body>
+<script>
+    CKEDITOR.replace( 'content' );
+</script>
+</html>

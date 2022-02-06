@@ -1,0 +1,12 @@
+<h3><span id="a">Mohak@Bajaj</span>:<span id="b">~</span><span id="c">$</span> cat mohak-resume.txt </h3>
+<h2>Hi, I'm Mohak Bajaj.<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+<p>Computer Science Student at <a href = "https://upes.ac.in/"> University of Petroleum and Energy Studies, Uttarakhand.</a> <!-- slightdelayhere--><!-- longlongcomment --> 
+ <br>Pursuing <a href = "https://www.upes.ac.in/schools/school-of-computer-science"> B.Tech in Computer Science and Engineering.</a> </p><!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj --><p>I love doing Automation of Tasks. Check me out on <a href="https://GITHUB.COM/Mohak-CODING-HEAVEN">GitHub</a>.<!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi --><p>My other interests are Machine Learning and Web Development. </p><!-- owlsqweoifjqwoefijqwoeifjqwoefijwef --><p> Resume - <a href = "./Resume.pdf">Click here</a> </p> <!-- owlsqweoifjqwoefijqwoeifjqwoefijwef --> </h2>
+
+<h3><span id="a">Mohak@Bajaj</span>:<span id="b">~</span><span id="c">$</span> Fun Fact about me </h3>
+<h1> I didnt even knew about coding before the last 2 years of my school life :P </h1>
+
+<h3><span id="a">Mohak@Bajaj</span>:<span id="b">~</span><span id="c">$</span> Quote of the Day </h3>
+<h1>Everyone is a loser till they decide to do something about it. </h1><!-- slightdelayhere-->
+
+<h3><span id="a">Mohak@Bajaj</span>:<span id="b">~</span><span id="c">$
